@@ -1,6 +1,4 @@
-package Singelton.Lesson_2_Singelton;
-
-import Singelton.Lesson_2_Singelton.GameEngine;
+package Singleton.Lesson_2_Singleton;
 
 public class Main {
     public static void main(String[] args) {

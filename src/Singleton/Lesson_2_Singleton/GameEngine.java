@@ -1,6 +1,10 @@
-package Singelton.Lesson_2_Singelton;
+package Singleton.Lesson_2_Singleton;
 
-public class GameEngine {
+import java.io.Serializable;
+
+public class GameEngine implements Serializable {
+
+    private static final long serialVersionUID = 232323223;
 
     private int hp = 100;
     private String characterName = "";
@@ -22,11 +26,19 @@ public class GameEngine {
 
     public static GameEngine getInstance() {
         if (instance == null) {
-            instance = new GameEngine();
+            synchronized (GameEngine.class){
+                if(instance ==null){
+                    instance = new GameEngine();
+                }
+            }
+
         }
         return instance;
 
 
 
+    }
+    protected Object readResolve(){
+        return getInstance();
     }
 }
