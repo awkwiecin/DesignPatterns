@@ -1,6 +1,6 @@
-package S1_Observer.order;
+package Observer.S1_Observer.order;
 
-import S1_Observer.notification.Observer;
+import Observer.S1_Observer.notification.Observer;
 
 import java.util.HashSet;
 import java.util.Set;

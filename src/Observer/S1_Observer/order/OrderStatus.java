@@ -1,4 +1,4 @@
-package S1_Observer.order;
+package Observer.S1_Observer.order;
 
 public enum OrderStatus {
 

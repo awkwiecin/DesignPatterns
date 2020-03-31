@@ -1,10 +1,10 @@
-package S1_Observer;
+package Observer.S1_Observer;
 
-import S1_Observer.notification.Email;
-import S1_Observer.notification.MobileApp;
-import S1_Observer.notification.TextMessage;
-import S1_Observer.order.Order;
-import S1_Observer.order.OrderStatus;
+import Observer.S1_Observer.notification.Email;
+import Observer.S1_Observer.notification.MobileApp;
+import Observer.S1_Observer.notification.TextMessage;
+import Observer.S1_Observer.order.Order;
+import Observer.S1_Observer.order.OrderStatus;
 
 public class Main {
 

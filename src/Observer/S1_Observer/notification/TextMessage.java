@@ -1,6 +1,6 @@
-package S1_Observer.notification;
+package Observer.S1_Observer.notification;
 
-import S1_Observer.order.Order;
+import Observer.S1_Observer.order.Order;
 
 public class TextMessage implements Observer {
     public void update(Order order){
