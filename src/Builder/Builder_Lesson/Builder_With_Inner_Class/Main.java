@@ -1,6 +1,6 @@
-package Builder.Builder_Lesson.Builder_Builder_With_Inner_Class;
+package Builder.Builder_Lesson.Builder_With_Inner_Class;
 
-import Builder.Builder_Lesson.Builder_Builder_With_Inner_Class.House.House;
+import Builder.Builder_Lesson.Builder_With_Inner_Class.House.House;
 
 public class Main {
     public static void main(String[] args) {

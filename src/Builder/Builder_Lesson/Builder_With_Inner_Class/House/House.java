@@ -1,4 +1,4 @@
-package Builder.Builder_Lesson.Builder_Builder_With_Inner_Class.House;
+package Builder.Builder_Lesson.Builder_With_Inner_Class.House;
 
 public class House {
 
