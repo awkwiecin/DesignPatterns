@@ -14,9 +14,10 @@ public class Main {
         weatherForecast.registerObserver(radioNews);
         weatherForecast.registerObserver(internetNews);
         weatherForecast.registerObserver(tvNews);
-        weatherForecast.notifiObservers();
+        weatherForecast.notifyObservers();
         weatherForecast.unregisterObserver(tvNews);
         weatherForecast.unregisterObserver(radioNews);
+        System.out.println("--------------------");
         System.out.println("Nowa prognoza - powiadomienie tylko dla serwisu internetowego:");
         weatherForecast.updateForcast(18, 1007);
     }

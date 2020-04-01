@@ -7,54 +7,57 @@ import java.util.Set;
 
 public class WeatherForecast implements Observable {
 
-    int temprerature;
-    int presure;
-    Set<Observer> registerObserver = new HashSet<Observer>();
 
-    public WeatherForecast(int temprerature, int presure) {
-        this.temprerature = temprerature;
-        this.presure = presure;
+    int temperature;
+    int pressure;
+    Set<Observer> registeredObservers = new HashSet<Observer>();
+
+
+    public int getTemperature() {
+        return temperature;
     }
 
-    public int getTemprerature() {
-        return temprerature;
+    public int getPressure() {
+        return pressure;
     }
 
-    public void setTemprerature(int temprerature) {
-        this.temprerature = temprerature;
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
     }
 
-    public int getPresure() {
-        return presure;
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
     }
 
-    public void setPresure(int presure) {
-        this.presure = presure;
+    public WeatherForecast(int temperature, int pressure) {
+        this.temperature = temperature;
+        this.pressure = pressure;
     }
-
-
 
     public void registerObserver(Observer observer) {
-        registerObserver.add(observer);
-
+        registeredObservers.add(observer);
 
     }
 
     public void unregisterObserver(Observer observer) {
-        registerObserver.remove(observer);
-
-
+        registeredObservers.remove(observer);
     }
 
-    public void notifiObservers() {
-        for(Observer observer : registerObserver){
+
+    public void notifyObservers() {
+        for (Observer observer : registeredObservers) {
             observer.updateForecast(this);
         }
 
+
     }
-    public void updateForcast(int temprerature, int presure){
-        setTemprerature(temprerature);
-        setPresure(presure);
-        notifiObservers();
+
+    public void updateForcast(int temperature, int pressure) {
+        setTemperature(temperature);
+        setPressure(pressure);
+        notifyObservers();
     }
 }
+
+
+
