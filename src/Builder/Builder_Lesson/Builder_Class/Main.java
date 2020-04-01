@@ -1,9 +1,9 @@
-package Builder.Builder_Lesson.Builder_Class.Builder_Clasic;
+package Builder.Builder_Lesson.Builder_Class;
 
-import Builder.Builder_Lesson.Builder_Class.Builder_Clasic.House.BigHouseBuilder;
-import Builder.Builder_Lesson.Builder_Class.Builder_Clasic.House.House;
-import Builder.Builder_Lesson.Builder_Class.Builder_Clasic.House.HouseDirector;
-import Builder.Builder_Lesson.Builder_Class.Builder_Clasic.House.SmallHouseBuilder;
+import Builder.Builder_Lesson.Builder_Class.House.BigHouseBuilder;
+import Builder.Builder_Lesson.Builder_Class.House.House;
+import Builder.Builder_Lesson.Builder_Class.House.HouseDirector;
+import Builder.Builder_Lesson.Builder_Class.House.SmallHouseBuilder;
 
 public class Main {
     public static void main(String[] args) {

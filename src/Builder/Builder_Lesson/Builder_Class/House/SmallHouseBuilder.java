@@ -1,4 +1,4 @@
-package Builder.Builder_Lesson.Builder_Class.Builder_Clasic.House;
+package Builder.Builder_Lesson.Builder_Class.House;
 
 public class SmallHouseBuilder implements HouseBuilder {
 
