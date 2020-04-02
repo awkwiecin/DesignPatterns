@@ -1,7 +1,16 @@
 package Factory.Lesson.FactoryClasic;
 
+import Factory.Lesson.FactoryClasic.Units.*;
+
 public class Main {
 
-    Unit tank = new Tank(200,0,20);
-    Unit infantryman = new Rifleman(200,0,20);
+    public static void main(String[] args) {
+
+
+        Factory factory = new UnitFactory();
+
+        Unit tank = factory.createUnit(UnitType.TANK);
+        Unit infantryman = factory.createUnit(UnitType.RIFLEMAN);
+
+    }
 }

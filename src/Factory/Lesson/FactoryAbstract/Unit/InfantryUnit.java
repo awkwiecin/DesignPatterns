@@ -1,11 +1,11 @@
-package Factory.Lesson.FactoryClasic;
+package Factory.Lesson.FactoryAbstract.Unit;
 
-public abstract class Unit {
+public abstract class InfantryUnit {
     private int hp;
     private int exp;
     private int dmgDone;
 
-    public Unit(int hp, int exp, int dmgDone) {
+    protected InfantryUnit(int hp, int exp, int dmgDone) {
         this.hp = hp;
         this.exp = exp;
         this.dmgDone = dmgDone;
