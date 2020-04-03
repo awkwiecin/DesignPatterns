@@ -1,9 +1,8 @@
 package Factory.Practice.Car;
 
+import Factory.Practice.Car.BMW.BMW;
 import Factory.Practice.Car.BMW.BMWType;
-import Factory.Practice.Car.BMW.E60;
-import Factory.Practice.Car.BMW.X5;
-import Factory.Practice.Car.Ford.Fokus;
+import Factory.Practice.Car.Ford.Ford;
 import Factory.Practice.Car.Ford.FordType;
 
 public class CommonwealthFactory extends Factory {
@@ -15,9 +14,9 @@ public class CommonwealthFactory extends Factory {
     public Car createBMWModel(BMWType type) {
         switch (type) {
             case X5:
-                return new X5(1.8, "Petrol", 2019,position);
+                return new BMW(1.8, "Petrol", 2019,position);
             case E60:
-                return new E60(2.0, "Diesel", 2018,position);
+                return new BMW(2.0, "Diesel", 2018,position);
             default:
                 throw new UnsupportedOperationException("Nieznany typ");
         }
@@ -27,9 +26,9 @@ public class CommonwealthFactory extends Factory {
     public Car createFordModel(FordType type) {
         switch (type) {
             case CMax:
-                return new Fokus(1.8, "Petrol", 2019,position);
+                return new Ford(1.8, "Petrol", 2019,position);
             case Focus:
-                return new Fokus(2.0, "Diesel", 2018,position);
+                return new Ford(2.0, "Diesel", 2018,position);
             default:
                 throw new UnsupportedOperationException("Nieznany typ");
         }
