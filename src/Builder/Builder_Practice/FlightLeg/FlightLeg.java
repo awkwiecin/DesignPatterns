@@ -54,8 +54,8 @@ public class FlightLeg {
             return this;
         }
 
-        public FlightLegBuilder delayed(String delayed){
-            this.delayed = delayed;
+        public FlightLegBuilder delayed(String delayed){ // why are You using the type String? This is only the information about 
+            this.delayed = delayed;                      // the delay presence (true - flight delayed, false - not delayed) according to the directions
             return this;
         }
 
